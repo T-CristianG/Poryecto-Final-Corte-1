@@ -119,7 +119,7 @@ public class CargarDatos extends javax.swing.JFrame {
 
         btnLimpiar.setBackground(new java.awt.Color(199, 171, 126));
         btnLimpiar.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
-        btnLimpiar.setForeground(new java.awt.Color(255, 255, 255));
+        btnLimpiar.setForeground(new java.awt.Color(51, 51, 51));
         btnLimpiar.setText("LIMPIAR");
         btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
