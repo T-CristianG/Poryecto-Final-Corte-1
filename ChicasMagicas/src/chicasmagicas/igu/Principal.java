@@ -1,12 +1,35 @@
 package chicasmagicas.igu;
 
-public class Principal extends javax.swing.JFrame {
+public final class Principal extends javax.swing.JFrame {
 
     public Principal() {
         initComponents();
+        transparencia();
     }
-
+   
     @SuppressWarnings("unchecked")
+    
+    public void transparencia() {
+    jButton1.setBackground(new java.awt.Color(255, 221, 188, 220));
+    jButton1.setOpaque(true);
+    jButton1.setContentAreaFilled(true);
+    jButton1.setBorderPainted(false);
+
+    jButton2.setBackground(new java.awt.Color(255, 221, 188, 220));
+    jButton2.setOpaque(true);
+    jButton2.setContentAreaFilled(true);
+    jButton2.setBorderPainted(false);
+    
+    
+    jButton3.setBackground(new java.awt.Color(255, 221, 188, 220));
+    jButton3.setOpaque(true);
+    jButton3.setContentAreaFilled(true);
+    jButton3.setBorderPainted(false);
+}
+
+    
+    
+    
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -22,6 +45,7 @@ public class Principal extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(255, 221, 188));
         jButton1.setForeground(new java.awt.Color(102, 102, 102));
         jButton1.setText("CREA TU CHICA");
+        jButton1.setBorder(null);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -63,6 +87,7 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
 
     }//GEN-LAST:event_jButton3ActionPerformed

@@ -6,6 +6,21 @@ public class CargarDatos extends javax.swing.JFrame {
         initComponents();
     }
 
+    public void transparencia() {
+   
+
+    btnGuardar.setBackground(new java.awt.Color(255, 221, 188, 220));
+    btnGuardar.setOpaque(true);
+    btnGuardar.setContentAreaFilled(true);
+    btnGuardar.setBorderPainted(false);
+    
+    
+    btnLimpiar.setBackground(new java.awt.Color(255, 221, 188, 220));
+    btnLimpiar.setOpaque(true);
+    btnLimpiar.setContentAreaFilled(true);
+    btnLimpiar.setBorderPainted(false);
+}
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
