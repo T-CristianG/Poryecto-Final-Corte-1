@@ -41,7 +41,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\kilia\\OneDrive\\Escritorio\\La Ley de los Ciclos_ chicas mágicas y brujas.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo-Inicial.png"))); // NOI18N
         jLabel2.setText("jLabel2");
 
         jLabel1.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
