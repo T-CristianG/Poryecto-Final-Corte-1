@@ -1,5 +1,5 @@
 package chicasmagicas;
-
+// lo que quiera
 import chicasmagicas.igu.Principal;//se importa la clase principal
 
 public class ChicasMagicas {
