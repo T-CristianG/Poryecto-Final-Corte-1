@@ -40,7 +40,7 @@ public final class Principal extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setBackground(new java.awt.Color(255, 221, 188));
         jButton1.setForeground(new java.awt.Color(102, 102, 102));
@@ -51,8 +51,7 @@ public final class Principal extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(330, 150, 216, 66);
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 280, 216, 66));
 
         jButton2.setBackground(new java.awt.Color(255, 221, 188));
         jButton2.setText("VER DATOS");
@@ -61,8 +60,7 @@ public final class Principal extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2);
-        jButton2.setBounds(330, 280, 216, 66);
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 410, 216, 66));
 
         jButton3.setBackground(new java.awt.Color(255, 221, 188));
         jButton3.setText("SALIR");
@@ -71,18 +69,15 @@ public final class Principal extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3);
-        jButton3.setBounds(330, 420, 216, 66);
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 540, 216, 66));
 
         jLabel1.setFont(new java.awt.Font("Old English Text MT", 0, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Chicas Magicas");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(320, 10, 240, 80);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 240, 80));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo-Inicial.png"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(50, 0, 750, 680);
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 750, 680));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
