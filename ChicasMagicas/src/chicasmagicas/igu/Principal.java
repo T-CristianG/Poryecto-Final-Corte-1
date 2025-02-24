@@ -10,7 +10,7 @@ public final class Principal extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     
     public void transparencia() {
-    jButton1.setBackground(new java.awt.Color(255, 221, 188, 220));
+    jButton1.setBackground(new java.awt.Color(255, 221, 188, 100));
     jButton1.setOpaque(true);
     jButton1.setContentAreaFilled(true);
     jButton1.setBorderPainted(false);
@@ -46,6 +46,7 @@ public final class Principal extends javax.swing.JFrame {
         jButton1.setForeground(new java.awt.Color(102, 102, 102));
         jButton1.setText("CREA TU CHICA");
         jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -77,7 +78,7 @@ public final class Principal extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 240, 80));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo-Inicial.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 750, 680));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 680));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
