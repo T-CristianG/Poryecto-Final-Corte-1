@@ -55,19 +55,23 @@ public class CargarDatos extends javax.swing.JFrame {
         jLabel1.setText("Crea Tu Chica");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, 370, 40));
 
+        jLabel3.setFont(new java.awt.Font("Perpetua Titling MT", 0, 12)); // NOI18N
         jLabel3.setText("NOMBRE DE LA CHICA");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 115, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, -1, -1));
 
+        jLabel4.setFont(new java.awt.Font("Perpetua Titling MT", 0, 12)); // NOI18N
         jLabel4.setText("EDAD");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 122, -1));
 
-        jLabel5.setText("DESCRIPCION");
+        jLabel5.setFont(new java.awt.Font("Perpetua Titling MT", 0, 12)); // NOI18N
+        jLabel5.setText("DESCRIPCIÓN");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 90, 30));
 
+        jLabel6.setFont(new java.awt.Font("Perpetua Titling MT", 0, 12)); // NOI18N
         jLabel6.setText("ESTADO ACTUAL");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 275, 92, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 275, 110, -1));
 
-        txtedad.setBackground(new java.awt.Color(255, 221, 188));
+        txtedad.setBackground(new java.awt.Color(199, 171, 126));
         txtedad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtedadActionPerformed(evt);
@@ -75,7 +79,7 @@ public class CargarDatos extends javax.swing.JFrame {
         });
         getContentPane().add(txtedad, new org.netbeans.lib.awtextra.AbsoluteConstraints(218, 176, 277, -1));
 
-        txtestadoactual.setBackground(new java.awt.Color(255, 221, 188));
+        txtestadoactual.setBackground(new java.awt.Color(199, 171, 126));
         txtestadoactual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtestadoactualActionPerformed(evt);
@@ -83,7 +87,7 @@ public class CargarDatos extends javax.swing.JFrame {
         });
         getContentPane().add(txtestadoactual, new org.netbeans.lib.awtextra.AbsoluteConstraints(218, 271, 277, -1));
 
-        txtnombredelachica.setBackground(new java.awt.Color(255, 221, 188));
+        txtnombredelachica.setBackground(new java.awt.Color(199, 171, 126));
         txtnombredelachica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtnombredelachicaActionPerformed(evt);
@@ -91,7 +95,7 @@ public class CargarDatos extends javax.swing.JFrame {
         });
         getContentPane().add(txtnombredelachica, new org.netbeans.lib.awtextra.AbsoluteConstraints(218, 115, 277, -1));
 
-        txtciudaddeorigen.setBackground(new java.awt.Color(255, 221, 188));
+        txtciudaddeorigen.setBackground(new java.awt.Color(199, 171, 126));
         txtciudaddeorigen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtciudaddeorigenActionPerformed(evt);
@@ -99,6 +103,7 @@ public class CargarDatos extends javax.swing.JFrame {
         });
         getContentPane().add(txtciudaddeorigen, new org.netbeans.lib.awtextra.AbsoluteConstraints(218, 222, 277, -1));
 
+        txtdescripciondelpersonaje.setBackground(new java.awt.Color(199, 171, 126));
         txtdescripciondelpersonaje.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtdescripciondelpersonajeActionPerformed(evt);
@@ -106,23 +111,28 @@ public class CargarDatos extends javax.swing.JFrame {
         });
         getContentPane().add(txtdescripciondelpersonaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 390, 277, 90));
 
-        btnGuardar.setBackground(new java.awt.Color(255, 221, 188));
+        btnGuardar.setBackground(new java.awt.Color(199, 171, 126));
+        btnGuardar.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
+        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
         btnGuardar.setText("GUARDAR");
-        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 490, 181, 49));
+        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 510, 140, 30));
 
-        btnLimpiar.setBackground(new java.awt.Color(255, 221, 188));
+        btnLimpiar.setBackground(new java.awt.Color(199, 171, 126));
+        btnLimpiar.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
+        btnLimpiar.setForeground(new java.awt.Color(255, 255, 255));
         btnLimpiar.setText("LIMPIAR");
         btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLimpiarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 490, 181, 49));
+        getContentPane().add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 510, 130, 30));
 
+        jLabel8.setFont(new java.awt.Font("Perpetua Titling MT", 0, 12)); // NOI18N
         jLabel8.setText("CREADOR");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 321, 53, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 321, 90, -1));
 
-        txtusuario.setBackground(new java.awt.Color(255, 221, 188));
+        txtusuario.setBackground(new java.awt.Color(199, 171, 126));
         txtusuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtusuarioActionPerformed(evt);
@@ -130,10 +140,11 @@ public class CargarDatos extends javax.swing.JFrame {
         });
         getContentPane().add(txtusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(218, 321, 277, -1));
 
+        jLabel9.setFont(new java.awt.Font("Perpetua Titling MT", 0, 12)); // NOI18N
         jLabel9.setText("CORREO");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 359, -1, -1));
 
-        txtcorreo.setBackground(new java.awt.Color(255, 221, 188));
+        txtcorreo.setBackground(new java.awt.Color(199, 171, 126));
         txtcorreo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtcorreoActionPerformed(evt);
@@ -141,12 +152,14 @@ public class CargarDatos extends javax.swing.JFrame {
         });
         getContentPane().add(txtcorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(218, 359, 277, -1));
 
+        jLabel10.setFont(new java.awt.Font("Perpetua Titling MT", 0, 12)); // NOI18N
         jLabel10.setText("CIUDAD DE ORIGEN");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 222, 105, -1));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 222, 130, -1));
 
+        jLabel7.setFont(new java.awt.Font("Perpetua Titling MT", 0, 12)); // NOI18N
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo-Formulario.png"))); // NOI18N
         jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 560));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 570));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
