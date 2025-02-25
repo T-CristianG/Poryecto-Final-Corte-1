@@ -1,6 +1,15 @@
 package chicasmagicas.logica;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity 
 public class Chica {
+    
+   @Id
+   @GeneratedValue(strategy = GenerationType.SEQUENCE)
    private String nombredelachica;
    private int edad;
    private String ciudaddeorigen;
