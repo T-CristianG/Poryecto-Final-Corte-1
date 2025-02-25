@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity 
 public class Chica {
@@ -16,6 +17,7 @@ public class Chica {
    private String estadoactual;
    private String descripciondelpersonaje;
    //union de clases
+   @OneToOne
    private Usuario unUsuario;
    //constructor vacio
 
