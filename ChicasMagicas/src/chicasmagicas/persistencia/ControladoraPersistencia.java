@@ -2,6 +2,7 @@ package chicasmagicas.persistencia;
 
 import chicasmagicas.logica.Chica;
 import chicasmagicas.logica.Usuario;
+import java.util.List;
 
 public class ControladoraPersistencia {
     
@@ -18,6 +19,10 @@ public class ControladoraPersistencia {
         
         chicaJpa.create(chica);
         
+    }
+
+    public List<Chica> traerchicas() {
+        return chicaJpa,findChicaEntitis()
     }
     
     

@@ -1,25 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package chicasmagicas.igu;
+
 
 import chicasmagicas.logica.Chica;
 import chicasmagicas.logica.Controladora;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author Cristian
- */
 public class VerDatos extends javax.swing.JFrame {
     
-    Controladora control;
+    Controladora control = null;
 
-    /**
-     * Creates new form Plantilla_Chicas
-     */
+    //* Creates new form Plantilla_Chicas
     public VerDatos() {
         
         control = new Controladora();
@@ -123,10 +114,8 @@ public class VerDatos extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VerDatos().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new VerDatos().setVisible(true);
         });
     }
 
@@ -146,6 +135,7 @@ public class VerDatos extends javax.swing.JFrame {
         DefaultTableModel tabla = new DefaultTableModel(){
             
             // filas y columnas no sean editables
+            @Override
             public boolean isCellEditable(int row, int column){
                 return false;
             }
@@ -159,16 +149,20 @@ public class VerDatos extends javax.swing.JFrame {
         
         // Carga de los datos desde la base de datos
         
-        List <Chica> ListaChicas = control.traerMascotas();
+ // Carga de los datos desde la base de datos
         
-        // Recorrer la lista y mostrar cada uno de los elementos
+        List<Chica> listadeChicas = control.traerChicas();
         
-        if (ListaChicas!=null){
-            for (Chica chica: ListaChicas)
-                Object[] objeto = {Chica.getNum(),chica.getEdad(), chica.getCiudad_Origen(), chica.getEstado_Actual(), chica.getDescripcion(), chica.getCreador()
-                        Chica.getCorreo()};
-        }
-                // hola
-                
+        if (listadeChicas != null) {
+            for (Chica chica : listadeChicas) {
+                Object[] objeto = {
+                chica.getNombredelachica(),chica.getEdad(),chica.getCiudaddeorigen(),chica.getEstadoactual(),chica.getDescripciondelpersonaje(),
+                chica.getUnUsuario().getCreador(),chica.getUnUsuario().getCorreo(),};
+                   
+                tabla.addRow(objeto);
+           } 
+       }
+       tablaChicas.setModel(tabla);
     }
 }
+//cambios

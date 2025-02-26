@@ -47,7 +47,7 @@ public class CargarDatos extends javax.swing.JFrame {
         btnGuardar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        txtusuario = new java.awt.TextField();
+        txtcreador = new java.awt.TextField();
         jLabel9 = new javax.swing.JLabel();
         txtcorreo = new java.awt.TextField();
         jLabel10 = new javax.swing.JLabel();
@@ -145,13 +145,13 @@ public class CargarDatos extends javax.swing.JFrame {
         jLabel8.setText("CREADOR");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 321, 90, -1));
 
-        txtusuario.setBackground(new java.awt.Color(199, 171, 126));
-        txtusuario.addActionListener(new java.awt.event.ActionListener() {
+        txtcreador.setBackground(new java.awt.Color(199, 171, 126));
+        txtcreador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtusuarioActionPerformed(evt);
+                txtcreadorActionPerformed(evt);
             }
         });
-        getContentPane().add(txtusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(218, 321, 277, -1));
+        getContentPane().add(txtcreador, new org.netbeans.lib.awtextra.AbsoluteConstraints(218, 321, 277, -1));
 
         jLabel9.setFont(new java.awt.Font("Perpetua Titling MT", 0, 12)); // NOI18N
         jLabel9.setText("CORREO");
@@ -203,14 +203,14 @@ public class CargarDatos extends javax.swing.JFrame {
         txtedad.setText("");
         txtdescripciondelpersonaje.setText("");
         txtciudaddeorigen.setText("");
-        txtusuario.setText("");
+        txtcreador.setText("");
         txtcorreo.setText("");
         
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
-    private void txtusuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtusuarioActionPerformed
+    private void txtcreadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcreadorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtusuarioActionPerformed
+    }//GEN-LAST:event_txtcreadorActionPerformed
 
     private void txtcorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcorreoActionPerformed
         // TODO add your handling code here:
@@ -251,10 +251,10 @@ public class CargarDatos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private java.awt.TextField txtciudaddeorigen;
     private java.awt.TextField txtcorreo;
+    private java.awt.TextField txtcreador;
     private java.awt.TextField txtdescripciondelpersonaje;
     private java.awt.TextField txtedad;
     private java.awt.TextField txtestadoactual;
     private java.awt.TextField txtnombredelachica;
-    private java.awt.TextField txtusuario;
     // End of variables declaration//GEN-END:variables
 }
