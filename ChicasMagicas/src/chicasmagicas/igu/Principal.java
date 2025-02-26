@@ -104,9 +104,11 @@ public final class Principal extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         
-        Plantilla_Chicas pantalla = new Plantilla_Chicas();
+        VerDatos pantalla = new VerDatos();
         pantalla.setVisible(true);
         pantalla.setLocationRelativeTo(null);
+        
+        
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
