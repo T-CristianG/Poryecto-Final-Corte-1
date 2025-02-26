@@ -7,7 +7,7 @@ public class Controladora {
     
     ControladoraPersistencia controlPersis = new ControladoraPersistencia();
 
-    public void guardar(String nombrechica, String estadoact, String eda, String descripcion, String ciudad, String corre) {
+    public void guardar(String nombrechica, String estadoact, String eda, String descripcion, String ciudad, String corre, String creador) {
         
         Chica chica = new Chica();
         
@@ -21,20 +21,13 @@ public class Controladora {
         Usuario user = new Usuario();
         
         user.setCorreo(corre);
-        user.setCreador(ciudad);
+        user.setCreador(creador);
         
        controlPersis.guardar(user,chica);
         
     }
 
-    public List<Chica> traerMascotas() {
-       return controlPersis.traerchicas();
-       
-    }
-
     public List<Chica> traerChicas() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
-    
+       return controlPersis.traerChicas();
+    }   
 }

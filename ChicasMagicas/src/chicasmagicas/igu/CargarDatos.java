@@ -224,8 +224,9 @@ public class CargarDatos extends javax.swing.JFrame {
         String descripcion = txtdescripciondelpersonaje.getText();
         String ciudad = txtciudaddeorigen.getText();
         String corre  = txtcorreo.getText();
+        String creador = txtcreador.getText();
         
-        control.guardar(nombrechica, estadoact, eda, descripcion, ciudad, corre);
+        control.guardar(nombrechica, estadoact, eda, descripcion, ciudad, corre, creador);
         
         JOptionPane optionPane = new JOptionPane("Se guardo correctamente");
         optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);

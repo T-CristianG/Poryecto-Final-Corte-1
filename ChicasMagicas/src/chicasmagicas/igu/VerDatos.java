@@ -1,6 +1,5 @@
 package chicasmagicas.igu;
 
-
 import chicasmagicas.logica.Chica;
 import chicasmagicas.logica.Controladora;
 import java.util.List;
@@ -29,7 +28,7 @@ public class VerDatos extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tablaChicas = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
@@ -45,9 +44,9 @@ public class VerDatos extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Diseño sin título (1).png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 160, 160));
 
-        jTable1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jTable1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tablaChicas.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        tablaChicas.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        tablaChicas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
                 {},
@@ -58,11 +57,11 @@ public class VerDatos extends javax.swing.JFrame {
 
             }
         ));
-        jTable1.setCellSelectionEnabled(true);
-        jScrollPane1.setViewportView(jTable1);
-        jTable1.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+        tablaChicas.setCellSelectionEnabled(true);
+        jScrollPane1.setViewportView(tablaChicas);
+        tablaChicas.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, 310, 250));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 820, 250));
 
         jButton1.setText("Eliminar");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 590, -1, -1));
@@ -125,7 +124,7 @@ public class VerDatos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tablaChicas;
     // End of variables declaration//GEN-END:variables
 
     private void cargarTabla() {
@@ -144,7 +143,7 @@ public class VerDatos extends javax.swing.JFrame {
         
         //establecemos los nombres de las columnas
         
-        String  titulos[]={"Num", "Nombre", "Edad", "Ciudad_Origen", "Estado_Actual", "Descripcion", "Creador", "Correo"};
+        String  titulos[]={"Nombre", "Edad", "Ciudad_Origen", "Estado_Actual", "Descripcion", "Creador", "Correo"};
         tabla.setColumnIdentifiers(titulos);
         
         // Carga de los datos desde la base de datos
@@ -157,8 +156,8 @@ public class VerDatos extends javax.swing.JFrame {
             for (Chica chica : listadeChicas) {
                 Object[] objeto = {
                 chica.getNombredelachica(),chica.getEdad(),chica.getCiudaddeorigen(),chica.getEstadoactual(),chica.getDescripciondelpersonaje(),
-                chica.getUnUsuario().getCreador(),chica.getUnUsuario().getCorreo(),};
-                   
+                chica.getUnUsuario() != null ? chica.getUnUsuario().getCreador() : "N/A",
+                chica.getUnUsuario() != null ? chica.getUnUsuario().getCorreo() : "N/A"};
                 tabla.addRow(objeto);
            } 
        }

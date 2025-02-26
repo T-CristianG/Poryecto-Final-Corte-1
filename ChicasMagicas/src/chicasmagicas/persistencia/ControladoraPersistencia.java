@@ -21,8 +21,8 @@ public class ControladoraPersistencia {
         
     }
 
-    public List<Chica> traerchicas() {
-        return chicaJpa,findChicaEntitis()
+    public List<Chica> traerChicas() {
+        return chicaJpa.findChicaEntitis();
     }
     
     

@@ -5,6 +5,7 @@
         <group>
             <file>file:/C:/Java/ChicasMagicas/Poryecto-Final-Corte-1/ChicasMagicas/src/chicasmagicas/igu/VerDatos.java</file>
             <file>file:/C:/Java/ChicasMagicas/Poryecto-Final-Corte-1/ChicasMagicas/src/chicasmagicas/logica/Chica.java</file>
+            <file>file:/C:/Java/ChicasMagicas/Poryecto-Final-Corte-1/ChicasMagicas/src/chicasmagicas/persistencia/ChicaJpaController.java</file>
             <file>file:/C:/Java/ChicasMagicas/Poryecto-Final-Corte-1/ChicasMagicas/src/chicasmagicas/ChicasMagicas.java</file>
             <file>file:/C:/Java/ChicasMagicas/Poryecto-Final-Corte-1/ChicasMagicas/src/chicasmagicas/igu/Principal.java</file>
             <file>file:/C:/Java/ChicasMagicas/Poryecto-Final-Corte-1/ChicasMagicas/src/chicasmagicas/igu/CargarDatos.java</file>

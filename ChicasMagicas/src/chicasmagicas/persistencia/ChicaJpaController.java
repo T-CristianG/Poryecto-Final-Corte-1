@@ -6,6 +6,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
 
 public class ChicaJpaController implements Serializable {
     private EntityManagerFactory emf = null;
@@ -29,9 +30,15 @@ public class ChicaJpaController implements Serializable {
             em.close();
         }
     }
+    public List<Chica> findChicaEntitis() {
+        EntityManager em = getEntityManager();
+        try {
+            TypedQuery<Chica> query = em.createQuery("SELECT c FROM Chica c", Chica.class);
+            return query.getResultList();
+        } finally {
+            em.close();
+        }
+}
 
-    List<Chica> findChicaEntitis() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }
 
