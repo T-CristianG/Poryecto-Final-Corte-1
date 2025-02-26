@@ -165,9 +165,10 @@ public class VerDatos extends javax.swing.JFrame {
         
         if (ListaChicas!=null){
             for (Chica chica: ListaChicas)
-                Object[] objeto = {chica.getNum_Chica()}
+                Object[] objeto = {Chica.getNum(),chica.getEdad(), chica.getCiudad_Origen(), chica.getEstado_Actual(), chica.getDescripcion(), chica.getCreador()
+                        Chica.getCorreo()};
         }
-                
+                // hola
                 
     }
 }

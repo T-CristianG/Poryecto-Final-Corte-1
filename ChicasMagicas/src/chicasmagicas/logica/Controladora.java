@@ -1,6 +1,7 @@
 package chicasmagicas.logica;
 
 import chicasmagicas.persistencia.ControladoraPersistencia;
+import java.util.List;
 
 public class Controladora {
     
@@ -24,6 +25,10 @@ public class Controladora {
         
        controlPersis.guardar(user,chica);
         
+    }
+
+    public List<Chica> traerMascotas() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     
