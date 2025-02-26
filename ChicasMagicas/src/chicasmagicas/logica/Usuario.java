@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Usuario {
     @Id
    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    
+    //hola
     private int num_creador;
     private String creador;
     private String correo;
