@@ -61,7 +61,7 @@ public class VerDatos extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tablaChicas);
         tablaChicas.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 820, 250));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 1030, 250));
 
         jButton1.setText("Eliminar");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 590, -1, -1));
@@ -143,7 +143,7 @@ public class VerDatos extends javax.swing.JFrame {
         
         //establecemos los nombres de las columnas
         
-        String  titulos[]={"Nombre", "Edad", "Ciudad_Origen", "Estado_Actual", "Descripcion", "Creador", "Correo"};
+        String  titulos[]={"Nombre", "Edad", "Ciudad_Origen", "Estado_Actual", "Descripcion", "Creador", "Correo","contrato"};
         tabla.setColumnIdentifiers(titulos);
         
         // Carga de los datos desde la base de datos
@@ -157,11 +157,20 @@ public class VerDatos extends javax.swing.JFrame {
                 Object[] objeto = {
                 chica.getNombredelachica(),chica.getEdad(),chica.getCiudaddeorigen(),chica.getEstadoactual(),chica.getDescripciondelpersonaje(),
                 chica.getUnUsuario() != null ? chica.getUnUsuario().getCreador() : "N/A",
-                chica.getUnUsuario() != null ? chica.getUnUsuario().getCorreo() : "N/A"};
+                chica.getUnUsuario() != null ? chica.getUnUsuario().getCorreo() : "N/A",
+                generarFechaAleatoria()};
                 tabla.addRow(objeto);
            } 
        }
        tablaChicas.setModel(tabla);
     }
+
+    private Object generarFechaAleatoria() {
+        int año = 2025 + (int) (Math.random() * (2050 - 2025 + 1)); // Genera un año entre 2025 y 2050
+        int mes = 1 + (int) (Math.random() * 12); // Genera un mes entre 1 y 12
+        int dia = 1 + (int) (Math.random() * 28); // Genera un día entre 1 y 28 para evitar problemas con los meses
+
+        return año + "-" + String.format("%02d", mes) + "-" + String.format("%02d", dia);} // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
 }
+
 //cambios
