@@ -12,6 +12,7 @@ public class ChicaJpaController implements Serializable {
     public ChicaJpaController() {
         this.emf = Persistence.createEntityManagerFactory("ChicasMagicasPU");
     }
+   
 
     public EntityManager getEntityManager() {
         return emf.createEntityManager();

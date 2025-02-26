@@ -12,7 +12,7 @@ public class UsuarioJpaController implements Serializable {
     public UsuarioJpaController() {
         this.emf = Persistence.createEntityManagerFactory("ChicasMagicasPU");
     }
-
+    
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }

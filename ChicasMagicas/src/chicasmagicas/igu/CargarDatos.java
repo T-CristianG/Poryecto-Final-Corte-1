@@ -1,8 +1,16 @@
 package chicasmagicas.igu;
 
+import chicasmagicas.logica.Controladora;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
+
+
 public class CargarDatos extends javax.swing.JFrame {
+    
+    Controladora control = new Controladora();
 
     public CargarDatos() {
+        //control = new Controladora();
         initComponents();
     }
 
@@ -115,6 +123,11 @@ public class CargarDatos extends javax.swing.JFrame {
         btnGuardar.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
         btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
         btnGuardar.setText("GUARDAR");
+        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 510, 140, 30));
 
         btnLimpiar.setBackground(new java.awt.Color(199, 171, 126));
@@ -202,6 +215,26 @@ public class CargarDatos extends javax.swing.JFrame {
     private void txtcorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcorreoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtcorreoActionPerformed
+
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+        
+        String nombrechica = txtnombredelachica.getText();
+        String estadoact = txtestadoactual.getText();
+        String eda = txtedad.getText();
+        String descripcion = txtdescripciondelpersonaje.getText();
+        String ciudad = txtciudaddeorigen.getText();
+        String corre  = txtcorreo.getText();
+        
+        control.guardar(nombrechica, estadoact, eda, descripcion, ciudad, corre);
+        
+        JOptionPane optionPane = new JOptionPane("Se guardo correctamente");
+        optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
+        JDialog dialog = optionPane.createDialog("Guardado exitoso");
+        dialog.setAlwaysOnTop(true);
+        dialog.setVisible(true);
+        
+        
+    }//GEN-LAST:event_btnGuardarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuardar;
